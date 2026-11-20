@@ -297,11 +297,12 @@ php artisan bookings:stats --location="Quadra 1"
 ## 🐛 Problemas Conhecidos
 
 - ExampleTest falha (teste padrão do Laravel - irrelevante para API)
-
+- Para reportar bugs, abra uma [issue](https://github.com/RobertoTheDev/api-agendamento/issues)
 
 ## 📞 Suporte
 
 - **Email**: robertofilholopesg202@gmail.com
+- **GitHub Issues**: [Reportar problema](https://github.com/RobertoTheDev/api-agendamento/issues)
 - **Documentação**: http://localhost:8000/api/documentation
 
 ## 📄 Licença
@@ -309,4 +310,7 @@ php artisan bookings:stats --location="Quadra 1"
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
+
+**Desenvolvido com ❤️ por [Roberto Developer](https://github.com/RobertoTheDev)**
+
 *API de Agendamentos - Transformando a gestão de reservas com tecnologia moderna*
