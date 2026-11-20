@@ -6,6 +6,69 @@
     <title>Dashboard - Gestor</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+     <style>
+        /* Estilos da barra lateral */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #1a1a1a;
+            padding-top: 20px;
+            transition: left 0.3s ease;
+            z-index: 1000;
+        }
+
+        .sidebar.open {
+            left: 0;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        /* Ícone de engrenagem */
+        .gear-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #1a1a1a;
+            padding: 15px;
+            border-radius: 50%;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+            z-index: 500;
+        }
+
+        .gear-icon:hover {
+            background-color: #575757;
+        }
+
+        /* Conteúdo principal */
+        .main-content {
+            margin-left: 0;
+            transition: margin-left 0.3s ease;
+        }
+
+        .main-content.sidebar-open {
+            margin-left: 250px;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
     <div class="min-h-screen">
